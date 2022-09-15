@@ -1,0 +1,96 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #10162F;
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    }
+    
+.background {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.main {
+    height: 90vh;
+    padding: 1rem;
+    z-index: 10;
+}
+
+.container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: auto;
+    margin-top: 25vh;
+}
+
+div {
+    z-index: 20;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    column-gap: 2rem;
+    justify-content: space-around;
+    z-index: 10;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.item {
+    text-align: center;
+    color: #121212;
+    background-color: rgba(255,255,255,0.25);
+    z-index: 10;
+    padding: 2rem 1rem;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    z-index: 30;
+    font-size: 3rem;
+    margin: 0;
+    font-weight: normal;
+}
+
+h1::after {
+    content: "";
+    display: block;
+    border-top: 2px solid white;
+    width: 10%;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.material-symbols-outlined.icon {
+    color:white;
+    font-size: 6rem;
+    color: rgba(255,255,255,0.87);
+    margin-bottom: 3rem;
+}
+
+.value {
+    font-size: 2rem;
+    color: rgba(255,255,255,0.87);
+    margin-bottom: 1rem;
+}
+
+.unit {
+    color: rgba(255,255,255,0.87);
+    font-size: 1.5rem;
+}
+
+p {
+    margin: 0;
+    color: rgba(255,255,255,0.87);
+}

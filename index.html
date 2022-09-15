@@ -3,8 +3,63 @@
 <head>
   <meta charset=utf-8>
   <title>MGL Hall Slideshow</title>
+  <link href="style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 <body>
-    <h1>MGL Hall Slideshow</h1>
+  <canvas class="background" id="canvas"></canvas>
+  <script>
+
+    alert("Naciśnij F11");
+
+    window.onload = function() {
+      Particles.init({
+        selector: '.background',
+        connectParticles: true,
+        sizeVariations: 5,
+        color: ['#d90000', '#ffffff'],
+        maxParticles: 250,
+      });
+    };
+
+    const canvas = document.getElementById("canvas");
+    const ctx = canvas.getContext("2d");
+    ctx.fillStyle = "green";
+  </script>
+
+  <div class="main">
+    <div>
+      <h1>Zużycie energii</h1>
+    </div>
+    
+    <div class="container">
+      <div class="grid">
+        <div class="item">
+          <span class="material-symbols-outlined icon">bolt</span>
+          <p class="value">624,34</p>
+          <p class="unit">[kW]</p>
+        </div>
+        <div class="item">
+          <span class="material-symbols-outlined icon">water_drop</span>
+          <p class="value">36</p>
+          <p class="unit">[l/h]</p>
+        </div>
+        <div class="item">
+          <span class="material-symbols-outlined icon">light_mode</span>
+          <p class="value">2,1</p>
+          <p class="unit">[GJ/h]</p>
+        </div>
+        <div class="item">
+          <span class="material-symbols-outlined icon">ac_unit</span>
+          <p class="value">16,2</p>
+          <p class="unit">[GJ/h]</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
 </body>
 </html>
